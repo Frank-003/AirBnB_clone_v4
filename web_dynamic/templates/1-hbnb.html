@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HBNB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}?cache_id={{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/3-footer.css') }}?cache_id={{ cache_id }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/4-filters.css') }}?cache_id={{ cache_id }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/1-hbnb.js') }}?cache_id={{ cache_id }}"></script>
+</head>
+<body>
+    <div class="filters">
+        <h4>Amenities</h4>
+        <div class="amenities">
+            <ul>
+                <!-- Example amenities, replace with actual data in your implementation -->
+                <li>
+                    <input type="checkbox" data-id="1" data-name="WiFi"> WiFi
+                </li>
+                <li>
+                    <input type="checkbox" data-id="2" data-name="Pool"> Pool
+                </li>
+                <li>
+                    <input type="checkbox" data-id="3" data-name="Parking"> Parking
+                </li>
+                <li>
+                    <input type="checkbox" data-id="4" data-name="Air Conditioning"> Air Conditioning
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="amenities_selected">
+        <h4>Selected Amenities:</h4>
+        <div id="selected_amenities"></div>
+    </div>
+    <!-- Other HTML content -->
+</body>
+</html>
+
