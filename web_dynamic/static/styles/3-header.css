@@ -1,0 +1,14 @@
+/* Add to web_dynamic/static/styles/3-header.css */
+
+#api_status {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: auto 30px auto auto;
+}
+
+#api_status.available {
+    background-color: #ff545f;
+}
